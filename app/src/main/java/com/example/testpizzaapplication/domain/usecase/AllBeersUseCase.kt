@@ -1,9 +1,8 @@
 package com.example.testpizzaapplication.domain.usecase
 
-import com.example.testpizzaapplication.domain.repository.GetBeersRepository
+import com.example.testpizzaapplication.domain.repository.BeersRepository
 import com.example.testpizzaapplication.presentation.menu.entity.BeerEntity
 import io.reactivex.rxjava3.core.Observable
-import io.reactivex.rxjava3.core.Single
 import javax.inject.Inject
 
 interface AllBeersUseCase {
@@ -11,10 +10,10 @@ interface AllBeersUseCase {
 }
 
 class AllBeersUseCaseImpl @Inject constructor(
-    private val getBeersRepository: GetBeersRepository
+    private val beersRepository: BeersRepository
 ) : AllBeersUseCase {
 
     override fun invoke(): Observable<List<BeerEntity>> {
-        return getBeersRepository.getAllBeers()
+        return beersRepository.getAllBeers()
     }
 }

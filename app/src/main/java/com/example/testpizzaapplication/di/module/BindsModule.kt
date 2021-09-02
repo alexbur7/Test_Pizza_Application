@@ -2,10 +2,10 @@ package com.example.testpizzaapplication.di.module
 
 import com.example.testpizzaapplication.data.db.source.BeersDbSource
 import com.example.testpizzaapplication.data.db.source.BeersDbSourceImpl
-import com.example.testpizzaapplication.data.repository.GetBeersRepositoryImpl
+import com.example.testpizzaapplication.data.repository.BeersRepositoryImpl
 import com.example.testpizzaapplication.data.service.source.BeersServiceSource
 import com.example.testpizzaapplication.data.service.source.BeersServiceSourceImpl
-import com.example.testpizzaapplication.domain.repository.GetBeersRepository
+import com.example.testpizzaapplication.domain.repository.BeersRepository
 import com.example.testpizzaapplication.domain.usecase.AllBeersUseCase
 import com.example.testpizzaapplication.domain.usecase.AllBeersUseCaseImpl
 import com.example.testpizzaapplication.domain.usecase.StrongBeersUseCase
@@ -17,7 +17,7 @@ import dagger.Module
 interface BindsModule {
 
     @Binds
-    fun bindGetBeerRepository(getBeersRepositoryImpl: GetBeersRepositoryImpl): GetBeersRepository
+    fun bindGetBeerRepository(getBeersRepositoryImpl: BeersRepositoryImpl): BeersRepository
 
     @Binds
     fun bindBeersUseCase(getRepositoryUseCaseImp: AllBeersUseCaseImpl): AllBeersUseCase

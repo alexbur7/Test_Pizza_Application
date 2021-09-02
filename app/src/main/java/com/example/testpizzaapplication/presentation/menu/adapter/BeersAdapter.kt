@@ -9,8 +9,8 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.bumptech.glide.Glide
 import com.example.testpizzaapplication.R
 import com.example.testpizzaapplication.databinding.ItemMenuBinding
-import com.example.testpizzaapplication.presentation.util.extentions.inflate
 import com.example.testpizzaapplication.presentation.menu.entity.BeerEntity
+import com.example.testpizzaapplication.presentation.util.extentions.inflate
 
 class BeersAdapter : RecyclerView.Adapter<BeersAdapter.BeerHolder>() {
 

@@ -1,19 +1,16 @@
 package com.example.testpizzaapplication.data.repository
 
 import com.example.testpizzaapplication.data.db.source.BeersDbSource
-import com.example.testpizzaapplication.data.mapper.BeerApiToBeerEntityMapper
-import com.example.testpizzaapplication.data.service.AppService
 import com.example.testpizzaapplication.data.service.source.BeersServiceSource
-import com.example.testpizzaapplication.domain.repository.GetBeersRepository
+import com.example.testpizzaapplication.domain.repository.BeersRepository
 import com.example.testpizzaapplication.presentation.menu.entity.BeerEntity
 import io.reactivex.rxjava3.core.Observable
-import io.reactivex.rxjava3.core.Single
 import javax.inject.Inject
 
-class GetBeersRepositoryImpl @Inject constructor(
+class BeersRepositoryImpl @Inject constructor(
     private val beersDbSource: BeersDbSource,
     private val beersServiceSource: BeersServiceSource
-) : GetBeersRepository {
+) : BeersRepository {
 
     override fun getAllBeers(): Observable<List<BeerEntity>> {
         return Observable.concat(

@@ -5,7 +5,6 @@ import com.example.testpizzaapplication.data.mapper.BeerDbToBeerEntityMapper
 import com.example.testpizzaapplication.data.mapper.BeerEntityToBeerDbMapper
 import com.example.testpizzaapplication.presentation.menu.entity.BeerEntity
 import io.reactivex.rxjava3.core.Observable
-import io.reactivex.rxjava3.core.Single
 import javax.inject.Inject
 
 interface BeersDbSource {
@@ -44,5 +43,4 @@ class BeersDbSourceImpl @Inject constructor(
             beers.map(beerEntityMapper)
         )
     }
-
 }

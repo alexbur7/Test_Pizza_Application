@@ -5,7 +5,6 @@ import android.widget.Toast
 import androidx.annotation.StringRes
 import com.example.testpizzaapplication.R
 import retrofit2.HttpException
-import java.net.ConnectException
 import javax.inject.Inject
 
 class ErrorHandler @Inject constructor(
