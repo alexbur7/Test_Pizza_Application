@@ -19,11 +19,8 @@ class ErrorHandler @Inject constructor(
             is HttpException -> {
                 showToast(R.string.server_error)
             }
-            is ConnectException -> {
-                showToast(R.string.connection_error)
-            }
             else -> {
-                showToast(R.string.error)
+                showToast(R.string.connection_error)
             }
         }
     }

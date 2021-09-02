@@ -76,7 +76,7 @@ class MenuFragment : Fragment(R.layout.fragment_menu) {
             0 -> viewModel.getAllBeers()
             1 -> viewModel.getStrongBeers()
             else -> {
-                Toast.makeText(requireContext(), R.string.unsupport_category, Toast.LENGTH_SHORT)
+                Toast.makeText(requireContext(), R.string.un_support_category, Toast.LENGTH_SHORT)
                     .show()
             }
         }

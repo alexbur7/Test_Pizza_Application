@@ -11,7 +11,6 @@
     <string name="moscow">Москва</string>
     <string name="server_error">Ошибка с сервером</string>
     <string name="connection_error">Проверьте соединение с интернетом</string>
-    <string name="error">Что-то пошло не так</string>
     <string name="strong_beer">Крепкое пиво</string>
-    <string name="unsupport_category">Эта категория не поддерживается</string>
+    <string name="un_support_category">Эта категория не поддерживается</string>
 </resources>
